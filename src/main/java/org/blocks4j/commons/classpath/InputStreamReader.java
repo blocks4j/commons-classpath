@@ -25,7 +25,7 @@ import org.apache.commons.io.IOUtils;
 public class InputStreamReader {
 
     public static String read(InputStream is) {
-        if (null == is) {
+        if (is == null) {
             return "";
         }
 
@@ -38,7 +38,7 @@ public class InputStreamReader {
     }
 
     public static List<String> readLines(InputStream is) {
-        if (null == is) {
+        if (is == null) {
             return Collections.EMPTY_LIST;
         }
 
