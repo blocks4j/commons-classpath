@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.blocks4j.commons</groupId>
     <artifactId>commons-classpath</artifactId>
-    <version>1.0.0-SNAPTHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>Commons Classpath</name>
     <description>Commons Classpath</description>
     <url>http://github.com/blocks4j/commons-classpath</url>
