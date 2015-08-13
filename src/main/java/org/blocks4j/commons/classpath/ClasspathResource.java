@@ -19,9 +19,9 @@ import java.io.InputStream;
 import java.net.URI;
 
 
-public class ClasspathInputStream {
+public class ClasspathResource {
 
-    public static InputStream from(String arg) {
+    public static InputStream asStream(String arg) {
         URI uri = URI.create(arg);
         if (null == uri) {
             return null;
