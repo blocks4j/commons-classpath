@@ -15,6 +15,7 @@
  */
 package org.blocks4j.commons.classpath;
 
+import java.io.Closeable;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -50,8 +51,18 @@ public class InputStreamReader {
             throw new RuntimeException(e);
 
         } finally {
-            Closeables.closeQuietly(is);
+            closeQuietly(is);
         }
         return lines;
     }
+
+    private static void closeQuietly(Closeable arg) {
+        if (arg == null) {
+            return;
+        }
+        try {
+            arg.close();
+        } catch (Throwable ignored) { }
+    }
+
 }

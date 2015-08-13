@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 
 
-public class RegExp {
+class RegExp {
 
     public static final String URI_WITHOUT_PARAMETERS = "([A-Za-z]+://([^?&]*)).*";
 
